@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #fafafa;
+    
+  }
+  
+  .box {
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+  }
+  
+  .g-btn {
+    width: 100% !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    font-size: 15px !important;
+  }
+  .g-btn > div,
+  .g-btn > div > svg {
+    width: 40px !important;
+    height: 38px !important;
+  }
+
+ 
+
+.images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vmax;
+    flex-shrink: 0;
+    width: 300px;
+
+}
+
+.images img{
+    object-position: center;
+    flex-shrink: 0;
+}
+.allimages{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vmax;
+    flex-wrap: wrap;
+    font-family: gilroy;
+    text-align: center;
+}
+.Search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Search form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Search form input{
+    width: 40vmax;
+    height: 3vmax;
+    outline: none;
+    font-size: 1.5vmax;
+    padding: 0 2vw;
+    text-transform: capitalize;
+    border: 1px solid #000;
+}
+.Search form button{
+    width: 10vmax;
+    height: 3vmax;
+    color: aliceblue;
+    background: #333333;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+.paging{
+    position: relative;
+    left: 50%;
+    width: 50vmax;
+    height: 10vmax;
+    display: flex;
+    gap: 10px;
+}
+.main{
+    overflow: hidden;
+}
+.Trend h1{
+    text-align: center;
+
+}
+
+.pages {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 10px solid;
+    border-color: rgba(211, 211, 211, 0.15) rgba(165, 165, 165, 0.25) rgba(160, 160, 160, 0.35) rgba(150, 150, 150, 0.5);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
